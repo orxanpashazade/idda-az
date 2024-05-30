@@ -1,0 +1,10 @@
+@use "../variables/variable" as *;
+@use "../mixin/mixin" as *;
+%upper-header-btn-extend{
+    background-color: $upper-header-btn-bg-color;
+    box-shadow: $upper-header-btn-shadow;
+    border-radius: $upper-header-btn-radius;
+    border:$upper-header-btn-border;
+    height: $upper-header-btn-height;
+    @include flex($display:flex, $justify:center, $items:center);
+}
